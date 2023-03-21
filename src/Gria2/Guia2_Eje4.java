@@ -1,10 +1,7 @@
-/*
- Escriba un programa que lea 20 números. Si el número leído es 
-igual a cero se debe salir del bucle y mostrar el mensaje "Se capturó 
-el numero cero".  El programa deberá calcular y mostrar el resultado 
-de la suma de los números leídos, pero si el número es negativo no 
-debe sumarse. Nota: recordar el uso de la sentencia break.
-
+/*/*EJERCICIO 9 MATERIAL DE LECTURA
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package Gria2;
 
@@ -21,16 +18,13 @@ public class Guia2_Eje4 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
         Scanner leer = new Scanner(System.in);
-        int suma = 0;
-        int num;
-        int conteo = 0;
-        
-        for (int i = 0; i < 20; i++) {
-            
+        int suma= 0;
+        int conteo=0;
+        boolean salir = false;
+        do { 
             System.out.println("Ingrese un numero a sumar: ");
-            num = leer.nextInt();
+            int num = leer.nextInt();
             conteo+=1;
             
             if  (num == 0)  { 
@@ -40,16 +34,16 @@ public class Guia2_Eje4 {
                 continue;
                 } else if (num > 0 ); {
                          suma+=num;
-                            
-                            
-                        
-            
-            }           
-            }
-            
-          
-        System.out.println("Se ingresaron "+conteo+ " numeros y la suma es "+suma);
+                
+                } if (conteo == 20); {
+                salir = true;
+               }
+                       
+                
+        } while (salir);
+        
+         System.out.println("Se ingresaron "+conteo+ " numeros y la suma es "+suma);
         
     }
-    }
-
+    
+}

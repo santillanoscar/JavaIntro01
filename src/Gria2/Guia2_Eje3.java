@@ -20,15 +20,19 @@ public class Guia2_Eje3 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner leer = new Scanner(System.in);
-        int nota;
         
-        do {
-            System.out.println("Ingrese una nota entre 0 y 10 por favor");
+         System.out.println("Ingrese una nota entre 0 y 10");
+            int nota = leer.nextInt();
+        
+        while (nota < 0 || nota > 10) {
+           
+               System.out.println("Nota Incorrecta, reingrese una nota");
             nota = leer.nextInt();
-            
-        } while (nota<0 || nota > 10);
-        
-         System.out.println("La nota "+nota+" esta dentro de los permitidos");      
-    }
    
+        }
+        
+          System.out.println("Nota correcta");  
+    }
 }
+  
+
