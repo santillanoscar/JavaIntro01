@@ -16,7 +16,7 @@ o	Si no se cumple ninguno de los valores anteriores mostrar
 el mensaje “No existe un valor válido para tipo de bomba”
 
  */
-package Gria2;
+package Guia2;
 
 import java.util.Scanner;
 

@@ -4,7 +4,7 @@ sino está  entre 0 y 10 la nota se pedirá de nuevo hasta
 que la nota sea correcta.
 
  */
-package Gria2;
+package Guia2;
 
 import java.util.Scanner;
 

@@ -4,7 +4,7 @@ EJERCICIO 6 MATERIAL DE LECTURA
 usuario y determine si ambos o alguno de ellos es mayor a 25.
 
  */
-package Gria2;
+package Guia2;
 
 import java.util.Scanner;
 
