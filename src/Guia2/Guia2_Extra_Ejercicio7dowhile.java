@@ -1,5 +1,5 @@
 /*
- Realice un programa que calcule y visualice el valor máximo, 
+  Realice un programa que calcule y visualice el valor máximo, 
 el valor mínimo y el promedio de n números (n>0). El valor de n 
 se solicitará al principio del programa y los números serán 
 introducidos por el usuario. 
@@ -15,7 +15,7 @@ import java.util.Scanner;
  *
  * @author osantillan
  */
-public class Guia2_Extra_Ejercicio7 {
+public class Guia2_Extra_Ejercicio7dowhile {
 
     /**
      * @param args the command line arguments
@@ -30,7 +30,7 @@ public class Guia2_Extra_Ejercicio7 {
         int valorminimo = 0;
         int valormaximo = 0;
         double suma = 0;
-        while (i < n) {
+        do {
             i++;
 
             System.out.println("Ingrese un numero: ");
@@ -48,10 +48,12 @@ public class Guia2_Extra_Ejercicio7 {
             if (num < valorminimo) {
                 valorminimo = num;
             }
+        } while (i < n);
 
-        }
         System.out.println("El valor minimo es: " + valorminimo);
         System.out.println("el valor maximo es: " + valormaximo);
         System.out.println("El promedio es igual a:" + (promedio));
+
     }
+
 }
