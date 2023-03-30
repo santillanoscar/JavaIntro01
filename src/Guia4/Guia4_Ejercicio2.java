@@ -1,8 +1,9 @@
 /*
- Crea una aplicación que le pida dos números al usuario y este pueda 
-elegir entre sumar, restar, multiplicar y dividir. La aplicación debe 
-tener una función para cada operación matemática y deben devolver sus 
-resultados para imprimirlos en el main.
+ Diseñe una función que pida el nombre y la edad de N personas e imprima 
+los datos de las personas ingresadas por teclado e indique si son mayores 
+o menores de edad. Después de cada persona, el programa debe preguntarle 
+al usuario si quiere seguir mostrando personas y frenar cuando el usuario 
+ingrese la palabra “No”.
  */
 package Guia4;
 
@@ -19,8 +20,40 @@ public class Guia4_Ejercicio2 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Scanner leer = new Scanner(System.in);
+        String opcion;
+        do {
+            
        
         
+        System.out.println("Ingrese nombre de la persona");
+        String nombre = leer.next();
+         System.out.println("Ingrese edad de la persona");
+        int edad = leer.nextInt();
+        
+        mostrarPersonas(nombre, edad);
+        
+            System.out.println("Desea seguir ingresando nombres (S/N)");
+            opcion = leer.next().toUpperCase();
+               
+            
+            } while (opcion.equals("S"));     
+                
+        
     }
+
+    public static void mostrarPersonas(String var1, int var2) {
+        
+        System.out.println("El nombre es :"+var1);
+        System.out.println("La edad de "+var1+" es "+ var2);
+        if (var2 >=18) {
+            System.out.println(" ES MAYOR DE EDAD");
+        } else {
+            System.out.println(" NO ES MAYOR DE EDAD");
+        }
+        
+        
+        } 
 }
+
 

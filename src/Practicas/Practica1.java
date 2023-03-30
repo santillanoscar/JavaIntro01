@@ -5,6 +5,7 @@
  */
 package Practicas;
 
+import java.util.Random;
 import java.util.Scanner;
 
 /**
@@ -18,9 +19,23 @@ public class Practica1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        	}
+        
+      Random r = new Random();
+        for (int i = 0; i < 26; i++) {
+            
+        
+char c = (char)(r.nextInt(26) + 'A'); 
 
+        System.out.println(" el caracter es: "+ c);
+      }
+
+      
+        
     }
+
+}
+
     
     
 
+ 
